@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<title>Onadeji Oluwatobi</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="port.css">
+<style>
+  
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+
+    <head>
+
+    <nav>
+        <div id="links">
+        <a href="index.html"> HOME</a>
+        <a href="#about">About me</a> 
+         <A href="#contact">CONTACT</A>
+         <a href="#blog">My blog</a>
+    </div>
+    </nav>
+    </head>
+    <div class="section">
+        <div class="logo"></div>
+        
+        <div class="text">
+            <p>Onadeji Oluwatobi -- Website developer</p>
+    
+    </div>
+    <script>
+        const text = document.querySelector('.text p');
+    text.innerHTML = text.innerText.split("").map(
+        (char, i) =>
+    `<span style="transform:rotate(${i * 9}deg)"> ${char}</span>`
+    ).join("")
+    </script>
+  <body>
+  </body>
+</body>
+<footer>
+
+
+</footer>
+</html>
