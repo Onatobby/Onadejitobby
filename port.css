@@ -5,13 +5,14 @@ nav {
     margin: 0px;
     clear: both;
     font-family: cursive;
+    margin-right: 0px;
     
     
 }
 
 #links{
     margin: 0 auto;
-    margin-left: 700px; 
+    margin-left: 500px; 
     width: 500px; 
     font-size: 12px; 
     display: flex;
@@ -21,9 +22,9 @@ nav {
 }
 
 body{
-    width: 100px;
-    height: 100px;
-    background: whitesmoke;
+    width: 100%;
+    height: 100%;
+    background:blanchedalmond;
     background-position: cover;
     position: relative;
     animation-name: tobby;
@@ -31,15 +32,15 @@ body{
     transition-delay: 2s;
 }
 @keyframes tobby {
-    from {background:whitesmoke}
-    to{background-color: blanchedalmond;}
+    from {background: chocolate}
+    to{background-color: whitesmoke;}
 }
 
 .section {
-    padding: 0;
-    margin: 0;
+     margin-top: 200px;
+    margin-left: 500px;
     position: relative;
-    width: 200px;
+    width: 600px;
     height: 220px;
     border-radius: 50%;
     display: flex;
@@ -49,12 +50,13 @@ body{
 }
 .logo {
     position: absolute;
-    width: 150px;
-    height: 145px;
+    width: 145px;
+    height: 150px;
     background:url(tobi.jpg);
     background-size: cover;
     filter: brightness(1.5) contrast(1.5);
-    border-radius: 452%;
+    border-radius: 45%;
+
     
 }
 .text {
@@ -62,6 +64,7 @@ body{
     width: 100%;
     height: 100%;
     animation: rotateText 10s linear infinite;
+    
 }
 @keyframes rotateText 
 {
@@ -80,4 +83,83 @@ body{
     left: 50%;
     font-size: 1.2em;
     transform-origin:0 100px;
+
+}
+
+.about-me {
+    position: absolute;
+    margin-top: 200px;
+    font-size: medium;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    justify-content: right;
+    align-items: right;
+    margin-right: 800px;
+    width: 600px ; 
+
+}
+
+p.my {
+    justify-content: left;
+    align-items: left;
+    font-size: x-large;
+    display: flex;
+}
+
+#skills{
+    margin-right: 100px;
+    margin-top: 1000px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+
+    
+    
+}
+
+#skills:hover{
+    animation-play-state: paused;
+}
+
+#skills figure{
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 78%;
+    left: 10px;
+    top: 10px;
+    overflow: hidden;
+    border: solid 0px white;
+}
+
+#skills figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#skills figure:nth-child(2){ transform: rotateY(40deg) translateZ(288px);}
+#skills figure:nth-child(3){ transform: rotateY(80deg) translateZ(288px);}
+#skills figure:nth-child(4){ transform: rotateY(120deg) translateZ(288px);}
+#skills figure:nth-child(5){ transform: rotateY(160deg) translateZ(288px);}
+#skills figure:nth-child(6){ transform: rotateY(200deg) translateZ(288px);}
+#skills figure:nth-child(7){ transform: rotateY(240deg) translateZ(288px);}
+#skills figure:nth-child(8){ transform: rotateY(280deg) translateZ(288px);}
+#skills figure:nth-child(9){ transform: rotateY(320deg) translateZ(288px);}
+#skills figure:nth-child(10){ transform: rotateY(360deg) translateZ(288px);}
+
+#skills img{
+    -webkit-filter: grayscale(0);
+    cursor: pointer;
+    transition: all .3s ease;
+    width: 50%;
+}
+#skills img:hover{
+    -webkit-filter: grayscale(0);
+    transform: scale(1.0,1.2);
+}
+@keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
 }
